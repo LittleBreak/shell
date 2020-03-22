@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+
+spawn scp /root/work/neeq-home/dist/dist.zip root@192.168.248.175:/usr/share/nginx
+expect "password"
+send "reverse\r"
+interact
+
