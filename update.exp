@@ -1,0 +1,6 @@
+#!/usr/bin/expect
+
+spawn /root/shell/update.sh
+expect "password"
+send "reverse\r"
+interact
